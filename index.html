@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wishora — Create a celebration website</title>
+  <meta name="description" content="Choose an occasion, personalize a beautiful interactive celebration website, protect it with an optional passcode, and share it with anyone.">
+  <link rel="icon" href="images/illustrations/heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">✦</span><span><strong>Wishora</strong><small>personal celebration websites · V11</small></span></a>
+  <div class="header-actions"><span class="header-note">Create · personalize · protect · share</span><a class="btn btn-ghost btn-small" href="#templates">Browse templates</a></div>
+</div></header>
+<main>
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">A little website for a big feeling</p>
+      <h1>Make the moment.<br><em>Make it yours.</em></h1>
+      <p class="hero-text">Choose an occasion, pick a starting experience, add your own photos, words, music and surprises, then publish a private or public Wishora link.</p>
+      <div class="hero-actions"><button class="btn btn-primary" id="start-btn">Start creating <span>→</span></button><a class="btn btn-ghost" href="#occasions">Explore occasions</a></div>
+      <div class="hero-meta"><span>✦ 20 occasion templates</span><span>↗ shareable URL</span><span>⌘ optional passcode</span></div>
+    </div>
+    <div class="hero-art">
+      <div class="story-stack stack-back"><img src="images/covers/occasions/anniversary.jpg" alt="Anniversary template cover"></div>
+      <div class="story-stack stack-main"><img src="images/covers/occasions/birthday.jpg" alt="Birthday template cover"><div class="story-caption"><strong>your story, your way</strong><span>photos · letter · music · surprises</span></div></div>
+      <div class="floating-note note-one">🔐 optional passcode</div><div class="floating-note note-two">📸 your memories</div><div class="floating-note note-three">↗ one share link</div>
+    </div>
+  </section>
+
+  <section id="occasions" class="wrap section">
+    <div class="section-heading"><div><p class="eyebrow">Start with the moment</p><h2>What are you celebrating?</h2><p class="muted section-sub">Pick a starting point. You can still change the style and experience later.</p></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search occasions or templates" aria-label="Search templates"></label></div>
+    <div class="occasion-grid" id="occasion-grid"></div>
+  </section>
+
+  <section id="templates" class="wrap section catalog-section">
+    <div class="section-heading compact"><div><p class="eyebrow">Template library</p><h2 id="template-title">All starting points</h2><p id="template-count" class="muted section-sub"></p></div><div class="catalog-controls"><span class="filter-status" id="filter-status" aria-live="polite">Showing all occasions</span><button class="text-button" id="show-all" type="button">Reset</button></div></div><div class="occasion-filter-bar" id="occasion-filter-bar" role="group" aria-label="Filter templates by occasion"></div>
+    <div class="template-grid" id="template-grid"></div>
+  </section>
+
+  <section class="experience-band"><div class="wrap"><div class="section-heading compact"><div><p class="eyebrow">The Wishora builder</p><h2>Build an experience, not a greeting card.</h2></div></div><div class="experience-grid">
+    <article><span>01</span><h3>Choose</h3><p>Start with Birthday, Wedding, Graduation, Festivals, or a completely custom occasion.</p></article>
+    <article><span>02</span><h3>Personalize</h3><p>Add names, your own words, photos, audio, video, memories, timelines and interactive blocks.</p></article>
+    <article><span>03</span><h3>Protect</h3><p>Optionally place a passcode layer before the recipient can reveal the celebration.</p></article>
+    <article><span>04</span><h3>Share</h3><p>Publish a unique Wishora URL and send it anywhere — WhatsApp, Instagram, email or text.</p></article>
+  </div></div></section>
+</main>
+<footer class="site-footer">Wishora · personalized celebration websites for birthdays, love, family, milestones and everything in between.</footer>
+<script src="js/catalog.js"></script><script src="js/common.js"></script><script src="js/section-catalog.js"></script><script src="js/home.js"></script>
+</body></html>

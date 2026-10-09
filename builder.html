@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wishora — Customize</title>
+  <meta name="description" content="Customize your Wishora celebration website.">
+  <link rel="icon" href="images/illustrations/heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header simple-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">✦</span><span><strong>Wishora</strong><small>Customize your celebration</small></span></a>
+    <a class="btn btn-ghost btn-small" href="index.html#templates">← Templates</a>
+  </div>
+</header>
+
+<main class="wrap builder-page">
+  <div class="builder-header">
+    <div>
+      <p class="eyebrow">Build your celebration</p>
+      <h1 id="builder-name">Customize your page</h1>
+      <p id="builder-blurb" class="muted"></p>
+      <div class="blueprint-note"><strong>Start with the template.</strong> Only controls used by this template are shown. Your text, photos and media are added to the template’s existing experience — they do not replace it.</div>
+    </div>
+    <div class="builder-header-meta">
+      <span class="template-chip" id="builder-chip"></span>
+      <button class="text-button reset-template" id="reset-template" type="button">Reset this template</button>
+    </div>
+  </div>
+
+  <div class="builder-layout">
+    <section class="builder-panel">
+      <div class="tab-row" role="tablist" aria-label="Template customization">
+        <button class="tab active" data-tab="content" type="button">Content</button>
+        <button class="tab" data-tab="experience" type="button">Experience</button>
+        <button class="tab" data-tab="style" type="button">Style</button>
+        <button class="tab" data-tab="media" type="button">Media</button>
+        <button class="tab" data-tab="privacy" type="button">Privacy</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="content">
+        <div id="content-panel-root"></div>
+      </div>
+
+      <div class="tab-panel" data-panel="experience">
+        <div id="experience-panel-root"></div>
+      </div>
+
+      <div class="tab-panel" data-panel="style">
+        <div id="style-panel-root"></div>
+      </div>
+
+      <div class="tab-panel" data-panel="media">
+        <div id="media-panel-root"></div>
+      </div>
+
+      <div class="tab-panel" data-panel="privacy">
+        <div id="privacy-panel-root"></div>
+      </div>
+
+      <div class="builder-actions">
+        <button class="btn btn-ghost" id="preview-btn" type="button">Preview</button>
+        <button class="btn btn-primary" id="publish-btn" type="button">Generate share link <span>↗</span></button>
+      </div>
+      <div class="share-result" id="share-result" hidden>
+        <div><strong>Your Wishora link is ready.</strong><p id="share-url"></p></div>
+        <button class="btn btn-primary btn-small" id="copy-link" type="button">Copy link</button>
+      </div>
+    </section>
+
+    <aside class="preview-panel">
+      <div class="preview-top">
+        <div><span>Live preview</span><small id="preview-size-label">Desktop · 1440×900 · Fit</small></div>
+        <div class="preview-device-switch" role="group" aria-label="Preview device">
+          <button type="button" data-preview-device="desktop" class="active">Desktop</button>
+          <button type="button" data-preview-device="tablet">Tablet</button>
+          <button type="button" data-preview-device="mobile">Mobile</button>
+        </div>
+      </div>
+      <div class="preview-stage" data-preview-device-stage="desktop">
+        <div class="preview-viewport"><iframe id="preview-frame" title="Wishora responsive template preview"></iframe></div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script src="js/catalog.js"></script>
+<script src="js/common.js"></script>
+<script src="js/section-catalog.js"></script>
+<script src="js/template-profiles.js"></script>
+<script src="js/occasion-skins.js"></script><script src="js/love-journey.js"></script><script src="js/occasion-flows.js"></script><script src="js/builder.js"></script>
+</body>
+</html>

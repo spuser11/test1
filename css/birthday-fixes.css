@@ -1,0 +1,63 @@
+/* Wishora — Classic Confetti Birthday layout fixes (loaded after birthday-experience.css) */
+html,body{overflow:hidden!important}
+#app{height:100%!important;min-height:0!important}
+
+/* 1 · screens can scroll, so no button is ever unreachable (long text, small phones, landscape) */
+.screen{height:100%!important;min-height:0!important;overflow-x:hidden!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;scrollbar-width:thin;box-sizing:border-box;padding-bottom:max(20px,env(safe-area-inset-bottom,0px))!important}
+
+/* 2 · keep the Back button clear of page titles */
+.screen:not([data-page=intro]):not([data-page=final]){padding-top:max(56px,calc(env(safe-area-inset-top,0px) + 52px))!important}
+.back-btn{z-index:6!important;top:max(10px,env(safe-area-inset-top,0px))!important}
+
+/* 3 · photo captions now carry title · date + note */
+.photo-caption{line-height:1.3;font-size:.9rem}
+.photo-caption b{font-weight:800}
+.photo-caption small{opacity:.7;font-size:.82em}
+.photo-caption span{display:block;margin-top:2px}
+
+/* 4 · long text must wrap instead of stretching the card */
+.birthday-media-card,.letter,.birthday-wish,.birthday-final-note,.bubble{overflow-wrap:anywhere;word-break:normal;max-width:100%;box-sizing:border-box}
+
+/* 5 · short screens (landscape phones, small windows): compact the artwork */
+@media (max-height:640px){
+  .cgi-img{max-height:32vh!important;width:auto!important}
+  .screen h2{margin-top:2px!important;margin-bottom:4px!important}
+}
+@media (max-height:480px){
+  .cgi-img{max-height:30vh!important}
+  .screen h2{font-size:1.25rem!important}
+  .btn{padding:10px 22px!important}
+  .birthday-screen-media{max-height:28vh!important;width:auto!important}
+}
+
+/* 6 · landscape phones / very short windows: everything must fit without hunting for buttons */
+@media (max-height:480px){
+  .screen:not([data-page=intro]):not([data-page=final]){padding-top:46px!important}
+  .back-btn{padding:6px 12px!important;font-size:.85rem!important;min-height:0!important}
+  .screen{gap:4px!important}
+  .screen h2{font-size:1.05rem!important;margin:0 0 2px!important}
+  .screen h1{font-size:1.25rem!important;margin:2px 0!important}
+  .screen p{margin:2px 0!important;font-size:.82rem!important;line-height:1.25!important}
+  .birthday-tip,.screen .subtitle{display:none!important}
+  .cgi-img{max-height:24vh!important}
+  .screen[data-page=cake] .cgi-img,.screen[data-page=bouquet] .cgi-img{max-height:36vh!important}
+  .photo-stack{height:40vh!important;min-height:0!important}
+  .birthday-wish{padding:6px 10px!important}
+  .birthday-wish-grid{gap:4px!important}
+  .birthday-media-card{padding:10px 14px!important;gap:4px!important}
+  .btn{padding:8px 20px!important;font-size:.9rem!important;margin-top:4px!important}
+}
+@media (max-height:480px){
+  .bouquet-stage{width:min(300px,60vw)!important;height:36vh!important;max-height:36vh!important;margin:2px auto 4px!important}
+  .bouquet-ring{transform:scale(.62)}
+  .candle-area{min-height:0!important;height:auto!important}
+  .candle-stage{height:40vh!important;min-height:0!important;margin:0 auto!important}
+  .screen[data-page=cake] .cgi-img{max-height:34vh!important}
+  .msg-bubbles{gap:4px!important}
+}
+@media (max-height:480px){
+  .bouquet-stage{height:28vh!important;max-height:28vh!important}
+  .bouquet-sub{display:none!important}
+  .bubble{padding:4px 10px!important;font-size:.74rem!important;line-height:1.2!important;margin:0!important}
+  .msg-bubbles{flex-wrap:wrap!important;justify-content:center!important}
+}

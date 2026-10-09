@@ -1,0 +1,24 @@
+/* Wishora V20 — Classic Confetti Birthday heavy VFX layer
+   Performance rule: only compositor-friendly animations (transform/opacity/scale/translate) and no full-screen overlays. */
+#app{position:relative}
+.lj-cv{position:absolute;inset:0;pointer-events:none}.lj-cv.back{z-index:0}.lj-cv.front{z-index:60}
+
+/* page change: a quick focus-pull (one-shot, leaves no running animation behind) */
+.screen.active{animation:bdfocus .8s cubic-bezier(.2,.8,.2,1) backwards}
+@keyframes bdfocus{0%{opacity:0;transform:scale(1.04)}100%{opacity:1;transform:none}}
+.bd-bloom{position:absolute;inset:0;z-index:58;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.7),rgba(255,170,210,.25) 45%,transparent 72%)}
+.bd-bloom.go{animation:bdbloom .7s ease-out}@keyframes bdbloom{0%{opacity:1}100%{opacity:0}}
+
+.screen h2{text-shadow:0 2px 0 rgba(255,255,255,.9),0 0 14px rgba(255,255,255,.65)}
+.cgi-img{animation:bdfloat 4.5s ease-in-out infinite}
+@keyframes bdfloat{50%{translate:0 -8px}}
+.btn[data-next],#yesBtn,#blowBtn{animation:bdpulse 2.2s ease-in-out infinite}
+@keyframes bdpulse{50%{scale:1.045}}
+
+/* photos: slow zoom + 3D tilt + gloss (transform-only) */
+.photo-stack{perspective:1000px}
+.photo-card{position:relative}
+.photo-card.active img{transform:perspective(800px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));animation:bdkb 10s ease-in-out infinite alternate;transition:transform .15s}
+@keyframes bdkb{from{scale:1;translate:0 0}to{scale:1.1;translate:-2% -1.5%}}
+.photo-card::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at var(--gx,30%) var(--gy,20%),rgba(255,255,255,.38),transparent 55%);border-radius:inherit}
+@media(prefers-reduced-motion:reduce){.screen.active,.cgi-img,.btn,#yesBtn,#blowBtn,.photo-card img{animation:none!important}}
