@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-hidden="true">
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ffe8aa"/><stop offset="100%" stop-color="#f0bd4a"/></linearGradient>
+<radialGradient id="gl"><stop offset="0%" stop-color="#ffe8aa" stop-opacity="0.65"/><stop offset="100%" stop-color="#f0bd4a" stop-opacity="0"/></radialGradient>
+<filter id="sh"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/></filter></defs>
+<ellipse cx="350" cy="480" rx="220" ry="50" fill="#000" opacity=".18"/><path d="M210 220 L350 290 L490 220 L455 470 Q350 560 245 470 Z" fill="#f5bf56" filter="url(#sh)"/><path d="M250 235 L350 290 L450 235" fill="#ffd66e"/><path d="M280 410 Q350 360 420 410" fill="none" stroke="#a67c22" stroke-width="9"/><polygon points="130,140 138,162 162,170 138,178 130,200 122,178 98,170 122,162" fill="#f0bd4a" opacity=".9"/><polygon points="570,150 578,172 602,180 578,188 570,210 562,188 538,180 562,172" fill="#f0bd4a" opacity=".9"/><polygon points="120,390 128,412 152,420 128,428 120,450 112,428 88,420 112,412" fill="#f0bd4a" opacity=".9"/><polygon points="580,390 588,412 612,420 588,428 580,450 572,428 548,420 572,412" fill="#f0bd4a" opacity=".9"/>
+</svg>

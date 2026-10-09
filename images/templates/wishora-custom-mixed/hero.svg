@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-hidden="true">
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e1d1ff"/><stop offset="100%" stop-color="#a97ce8"/></linearGradient>
+<radialGradient id="gl"><stop offset="0%" stop-color="#e1d1ff" stop-opacity="0.65"/><stop offset="100%" stop-color="#a97ce8" stop-opacity="0"/></radialGradient>
+<filter id="sh"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/></filter></defs>
+<circle cx="350" cy="350" r="180" fill="url(#gl)"/><rect x="160" y="220" width="170" height="120" rx="18" fill="#a97ce8" transform="rotate(-8 245 280)" opacity=".8"/><rect x="360" y="190" width="170" height="120" rx="18" fill="#6bc4d0" transform="rotate(9 445 250)" opacity=".8"/><rect x="235" y="390" width="230" height="145" rx="24" fill="#f2d2ef" transform="rotate(-3 350 460)" filter="url(#sh)"/><circle cx="300" cy="455" r="34" fill="#f8c15f"/><circle cx="405" cy="445" r="42" fill="#e77798"/><path d="M190 575 Q350 520 510 575" fill="none" stroke="#f1d8ff" stroke-width="10"/>
+</svg>
