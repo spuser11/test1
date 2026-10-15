@@ -1,0 +1,95 @@
+/* Wishora template identities — intentionally different, never a one-theme-fits-all catalog. */
+.gift-page{position:relative;overflow:hidden}
+.gift-page::before,.gift-page::after{content:"";position:fixed;pointer-events:none;z-index:0}
+.gift-page .gift-chrome,.gift-page .gift-stage,.gift-page .gift-nav,.gift-page .gift-footer{position:relative;z-index:2}
+
+/* Birthday */
+.template-wishora-birthday-classic{--g-accent:#e93f77;--g-deep:#ffd0df;--g-bg:#2b1020;--g-surface:#43182e;--g-muted:#ddb9c7;background:radial-gradient(circle at 20% 0%,#5a2241 0,transparent 35%),linear-gradient(180deg,#160914,#2b1020)}
+.template-wishora-birthday-classic::before{inset:0;background:radial-gradient(circle at 15% 18%,rgba(255,214,117,.8) 0 2px,transparent 3px),radial-gradient(circle at 80% 25%,rgba(255,150,205,.75) 0 2px,transparent 3px);background-size:88px 92px,120px 130px;opacity:.4}
+.template-wishora-birthday-gift{--g-accent:#ff7b27;--g-deep:#ffe3bd;--g-bg:#25150e;--g-surface:#402317;--g-muted:#d9bda9;background:linear-gradient(180deg,#130a06,#3b180c)}
+.template-wishora-birthday-gift::after{inset:auto -10% 8% auto;width:280px;height:280px;border-radius:50%;background:rgba(255,174,72,.12);filter:blur(12px)}
+
+/* Anniversary */
+.template-wishora-anniversary-story{--g-accent:#c98d7e;--g-deep:#f6d7cf;--g-bg:#211513;--g-surface:#33201e;--g-muted:#cdb1aa;background:linear-gradient(180deg,#160d0c,#35201d);font-family:Fraunces,Georgia,serif}
+.template-wishora-anniversary-story .scene{border-radius:8px;box-shadow:0 25px 100px rgba(0,0,0,.35)}
+.template-wishora-anniversary-cinema{--g-accent:#d5a95c;--g-deep:#f4e1a8;--g-bg:#0b0b0d;--g-surface:#17171b;--g-muted:#a9a3aa;background:radial-gradient(circle at 50% 0,#30271c 0,transparent 36%),#08080a}
+.template-wishora-anniversary-cinema .scene{border-radius:5px;border-color:rgba(213,169,92,.28)}
+
+/* Wedding */
+.template-wishora-wedding-story{--g-accent:#bd8978;--g-deep:#f2d8ce;--g-bg:#1d1614;--g-surface:#302320;--g-muted:#cbb4ac;background:linear-gradient(160deg,#16110f,#30211d)}
+.template-wishora-wedding-story::before{inset:0;background:radial-gradient(circle at 12% 16%,rgba(255,255,255,.11),transparent 18%),radial-gradient(circle at 90% 28%,rgba(255,215,187,.10),transparent 20%)}
+.template-wishora-wedding-vows{--g-accent:#f1c6a1;--g-deep:#fff0dd;--g-bg:#221610;--g-surface:#382316;--g-muted:#d7c0ae;background:radial-gradient(circle at 50% 10%,#5c351e 0,transparent 30%),linear-gradient(#150d09,#26160d)}
+.template-wishora-wedding-vows .scene{border-radius:32px;border-color:rgba(241,198,161,.25)}
+
+/* Baby */
+.template-wishora-baby-shower-welcome{--g-accent:#6ca4bd;--g-deep:#d7f3ff;--g-bg:#10232c;--g-surface:#193743;--g-muted:#a8c9d5;background:linear-gradient(180deg,#0b1820,#18343f)}
+.template-wishora-baby-shower-welcome::before{inset:0;background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.35) 0 18px,transparent 19px),radial-gradient(circle at 80% 56%,rgba(255,255,255,.25) 0 26px,transparent 27px);opacity:.18}
+.template-wishora-baby-shower-game{--g-accent:#e77798;--g-deep:#ffd6e6;--g-bg:#241323;--g-surface:#38203a;--g-muted:#d4b9cc;background:linear-gradient(145deg,#160c18,#46273e)}
+.template-wishora-baby-shower-game .scene{border-style:dashed}
+
+/* Graduation */
+.template-wishora-graduation-classic{--g-accent:#c2a86f;--g-deep:#efe5c5;--g-bg:#141416;--g-surface:#222226;--g-muted:#bfb6a5;background:linear-gradient(180deg,#0e0e10,#1a1a1f)}
+.template-wishora-graduation-classic .scene{border-radius:14px;box-shadow:0 22px 100px rgba(0,0,0,.42)}
+.template-wishora-graduation-future{--g-accent:#56b5e5;--g-deep:#bde8ff;--g-bg:#071522;--g-surface:#0d2738;--g-muted:#93bed0;background:radial-gradient(circle at 70% 20%,rgba(90,200,255,.16),transparent 22%),linear-gradient(180deg,#04101c,#082438)}
+.template-wishora-graduation-future::after{inset:0;background:linear-gradient(transparent 72%,rgba(84,182,229,.09));}
+
+/* Congratulations */
+.template-wishora-congratulations-celebrate{--g-accent:#f0bd4a;--g-deep:#ffe8aa;--g-bg:#21160a;--g-surface:#38270d;--g-muted:#ddc58d;background:radial-gradient(circle at 50% 0,#644810,transparent 32%),linear-gradient(#130d05,#281908)}
+.template-wishora-congratulations-celebrate .scene{border-color:rgba(240,189,74,.3)}
+.template-wishora-congratulations-gallery{--g-accent:#b46c5f;--g-deep:#f1ccc4;--g-bg:#211617;--g-surface:#332124;--g-muted:#cdb3b5;background:linear-gradient(180deg,#120d0e,#2d1f21)}
+.template-wishora-congratulations-gallery .scene{border-radius:12px}
+
+/* Farewell */
+.template-wishora-farewell-voyage{--g-accent:#5ca5d9;--g-deep:#b8def6;--g-bg:#0d1b25;--g-surface:#15303e;--g-muted:#9eb7c5;background:linear-gradient(180deg,#07121a,#173244)}
+.template-wishora-farewell-voyage::before{inset:0;background:repeating-linear-gradient(0deg,transparent 0 28px,rgba(255,255,255,.03) 29px 30px);}
+.template-wishora-farewell-memory{--g-accent:#bb8c4c;--g-deep:#efd8b4;--g-bg:#241b15;--g-surface:#35291f;--g-muted:#cdbda8;background:linear-gradient(145deg,#130e0a,#38271c)}
+.template-wishora-farewell-memory .scene{border-radius:2px}
+
+/* Home */
+.template-wishora-housewarming-welcome{--g-accent:#d98c4e;--g-deep:#f7d2a9;--g-bg:#23180f;--g-surface:#392618;--g-muted:#d0b89e;background:linear-gradient(180deg,#130b06,#3b2415)}
+.template-wishora-housewarming-welcome .scene{border-radius:26px}
+.template-wishora-housewarming-tour{--g-accent:#78ad83;--g-deep:#cce8d1;--g-bg:#101c15;--g-surface:#182b20;--g-muted:#adc8b4;background:linear-gradient(180deg,#08130d,#193023)}
+.template-wishora-housewarming-tour .scene{border-radius:4px}
+
+/* Festival */
+.template-wishora-festival-wishes-diwali{--g-accent:#ed9c37;--g-deep:#ffe0a0;--g-bg:#241006;--g-surface:#3c1d0a;--g-muted:#ddbd92;background:radial-gradient(circle at 50% 10%,#6c2d0f 0,transparent 30%),linear-gradient(#110702,#351606)}
+.template-wishora-festival-wishes-diwali::before{inset:0;background:radial-gradient(circle,rgba(255,194,76,.35) 0 2px,transparent 3px);background-size:90px 100px;opacity:.4}
+.template-wishora-festival-wishes-family{--g-accent:#cf626a;--g-deep:#ffd0d4;--g-bg:#251117;--g-surface:#3a1e27;--g-muted:#d7b5ba;background:linear-gradient(145deg,#150b10,#402029)}
+.template-wishora-festival-wishes-family .scene{border-radius:30px}
+
+/* Custom */
+.template-wishora-custom-blank{--g-accent:#d8a25c;--g-deep:#f1dfbd;--g-bg:#181818;--g-surface:#252525;--g-muted:#bcbcbc;background:linear-gradient(135deg,#101010,#262626)}
+.template-wishora-custom-blank .scene{border:1px dashed rgba(255,255,255,.22)}
+.template-wishora-custom-playground{--g-accent:#a97ce8;--g-deep:#e1d1ff;--g-bg:#171124;--g-surface:#241a3d;--g-muted:#c0b4d8;background:radial-gradient(circle at 20% 10%,rgba(169,124,232,.18),transparent 28%),radial-gradient(circle at 80% 80%,rgba(82,192,208,.13),transparent 28%),#0f0c18}
+.template-wishora-custom-playground .scene{border-radius:40px}
+
+/* Intro / gate shared styles */
+.scene-intro,.scene-passcode{min-height:590px;text-align:center;position:relative;overflow:hidden}
+.template-intro-art{width:120px;height:120px;margin:0 auto 22px;border-radius:36px;display:grid;place-items:center;font-size:58px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.035));border:1px solid rgba(255,255,255,.12);box-shadow:0 20px 60px rgba(0,0,0,.25);transform:rotate(-4deg);animation:introFloat 4s ease-in-out infinite}
+.template-intro-art.alt{transform:rotate(4deg);animation-delay:-1.2s}
+@keyframes introFloat{50%{transform:translateY(-8px) rotate(2deg)}}
+.template-intro-title{max-width:740px;margin:0 auto!important}
+.template-intro-copy{max-width:540px;margin:15px auto 0;color:var(--g-muted);font-size:14px}
+.template-gate-card{width:min(460px,100%);margin:18px auto 0;padding:25px;border-radius:24px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 60px rgba(0,0,0,.25)}
+.template-gate-icon{font-size:42px;margin-bottom:8px}.template-gate-card h2{font-size:42px!important}.template-gate-copy{color:var(--g-muted);font-size:12px}.template-gate-card input{width:100%;padding:13px;border-radius:13px;border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.18);color:var(--g-text);outline:0;margin:8px 0}.template-gate-card .primary-action{width:100%}.template-gate-error{min-height:20px;color:#ff9aaa;font-size:10px;margin:4px 0}
+.template-cover-mark{width:78px;height:78px;border-radius:26px;margin:0 auto 20px;display:grid;place-items:center;background:color-mix(in srgb,var(--g-accent) 15%,transparent);font-size:37px;color:var(--g-deep);border:1px solid color-mix(in srgb,var(--g-accent) 30%,transparent)}
+.template-cover-kicker{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--g-muted)}
+.template-cover-title{max-width:720px;margin:8px auto 0!important}
+
+@media(max-width:720px){.scene-intro,.scene-passcode{min-height:650px}.template-gate-card h2{font-size:35px!important}.template-intro-copy{font-size:13px}.template-intro-art{width:100px;height:100px;font-size:48px}}
+.template-intro-art-image{overflow:hidden;padding:12px}.template-intro-art-image img{width:100%;height:100%;object-fit:cover}.template-art-frame{padding:0;overflow:hidden}.template-art-frame img{width:100%;height:100%;object-fit:cover}
+
+/* Final visual asset system: every template owns a background + motif, while live text stays editable. */
+.gift-page{background-image:var(--wishora-bg-art),var(--g-bg-image,none);background-repeat:no-repeat,no-repeat;background-position:center,center;background-size:cover,cover;background-attachment:fixed,scroll;}
+.gift-page::before{content:"";inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.18));opacity:1;}
+.scene-template-motif{position:absolute;right:-18px;top:8px;width:min(150px,30vw);max-height:120px;object-fit:contain;opacity:.28;pointer-events:none;z-index:0;filter:drop-shadow(0 10px 24px rgba(0,0,0,.18));}
+.scene>*:not(.scene-template-motif){position:relative;z-index:1}
+.template-intro-art{width:min(170px,46vw);height:min(150px,40vw);padding:10px;border-radius:32px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);box-shadow:0 22px 70px rgba(0,0,0,.28)}
+.template-intro-art-image img{object-fit:contain}
+.template-art-frame{width:min(250px,72vw);height:min(185px,52vw);border-radius:28px;box-shadow:0 24px 80px rgba(0,0,0,.28);background:rgba(255,255,255,.08)}
+.template-art-frame img{object-fit:contain;padding:10px}
+.scene-cover .scene-template-motif,.scene-intro .scene-template-motif,.scene-passcode .scene-template-motif{opacity:.18;width:min(190px,36vw);top:5px}
+.template-gate-card{backdrop-filter:blur(12px);}
+@media(max-width:720px){.scene-template-motif{width:110px;opacity:.2}.template-art-frame{height:170px}.template-intro-art{width:125px;height:115px}}
+
+.photo-placeholder-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:min(720px,100%)}.photo-placeholder-grid>div{min-height:150px;border:1px dashed rgba(124,96,110,.25);border-radius:18px;background:rgba(255,255,255,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#8a6877;text-align:center;padding:14px;font-size:28px}.photo-placeholder-grid strong{font-size:14px;color:var(--ink,#171417)}.photo-placeholder-grid small{font-size:11px;line-height:1.4}.media-placeholder{padding:18px 16px;border:1px dashed rgba(124,96,110,.25);border-radius:16px;color:#8a6877;background:rgba(255,255,255,.55);text-align:center}@media(max-width:720px){.photo-placeholder-grid{grid-template-columns:1fr}.photo-placeholder-grid>div{min-height:120px}}

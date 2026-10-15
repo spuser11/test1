@@ -1,0 +1,78 @@
+/* Wishora V14 — Classic-Confetti-style experience for every occasion */
+.gift-page{--g-surface:#fff;--g-text:#3a2230;--g-muted:#7a5a6a;color:var(--g-text)}
+.gift-page.occasion-birthday{--v13-bg:linear-gradient(160deg,#ffe3ef,#fff1d6);--g-accent:#e91e63;--g-deep:#c2185b}
+.gift-page.occasion-wedding{--v13-bg:linear-gradient(160deg,#fdeee6,#f8e1e7);--g-accent:#c9776b;--g-deep:#8f4a4a}
+.gift-page.occasion-anniversary{--v13-bg:linear-gradient(160deg,#ffe1e6,#ffd0dd);--g-accent:#e0457b;--g-deep:#a61e4d}
+.gift-page.occasion-graduation{--v13-bg:linear-gradient(160deg,#e3ecff,#fff3d1);--g-accent:#2f55c8;--g-deep:#1c3a8a}
+.gift-page.occasion-congratulations{--v13-bg:linear-gradient(160deg,#fff0cf,#ffe0ec);--g-accent:#f59e0b;--g-deep:#b45309}
+.gift-page[class*="occasion-festival"]{--v13-bg:linear-gradient(160deg,#fff0d0,#ffd3a8);--g-accent:#e8590c;--g-deep:#9c3a06}
+.gift-page.occasion-baby-shower{--v13-bg:linear-gradient(160deg,#e0f4ff,#f3e5ff);--g-accent:#4aa3d6;--g-deep:#2b6b94}
+.gift-page.occasion-housewarming{--v13-bg:linear-gradient(160deg,#fdeed8,#e6f3de);--g-accent:#d9822b;--g-deep:#8a4b12}
+.gift-page.occasion-farewell{--v13-bg:linear-gradient(160deg,#dff7f3,#e4ecff);--g-accent:#1fa896;--g-deep:#0e6b75}
+.gift-page.occasion-custom{--v13-bg:linear-gradient(160deg,#ece6ff,#ffe6f3);--g-accent:#7c5cff;--g-deep:#4b2fb8}
+
+/* sticker-style card */
+.gift-page .scene{background:rgba(255,255,255,.86);border:3px solid #fff;box-shadow:0 26px 60px color-mix(in srgb,var(--g-accent) 24%,transparent),0 3px 0 color-mix(in srgb,var(--g-accent) 14%,transparent);backdrop-filter:none}
+.gift-page .scene::before{background:radial-gradient(520px 240px at 50% -10%,color-mix(in srgb,var(--g-accent) 14%,transparent),transparent 70%)}
+.gift-page .scene-orbit-mark{background:#fff;border-color:color-mix(in srgb,var(--g-accent) 30%,transparent)}
+.gift-page .scene-template-motif{opacity:.22}
+.gift-page .template-art-frame,.gift-page .template-intro-art{background:radial-gradient(circle at 50% 40%,#fff,color-mix(in srgb,var(--g-accent) 14%,#fff) 70%);border:3px solid #fff;box-shadow:0 14px 40px color-mix(in srgb,var(--g-accent) 30%,transparent);animation:v14bounce 2.8s ease-in-out infinite}
+@keyframes v14bounce{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-12px) rotate(1.5deg)}}
+.gift-page .template-art-frame img,.gift-page .template-intro-art img{filter:drop-shadow(0 8px 10px rgba(0,0,0,.18))}
+
+/* type */
+.gift-page .template-cover-title,.gift-page .template-intro-title{background:none;-webkit-text-fill-color:var(--g-deep);color:var(--g-deep);text-shadow:0 2px 0 #fff}
+.gift-page .scene h2:not(.template-cover-title){color:var(--g-deep)}
+.gift-page .eyebrow,.gift-page .template-cover-kicker{color:var(--g-accent)}
+.gift-page .scene-sub,.gift-page .scene-caption,.gift-page .occasion-cover-line,.gift-page .template-intro-copy{color:var(--g-muted);border-color:color-mix(in srgb,var(--g-accent) 25%,transparent)}
+.gift-page .scene-sub strong,.gift-page .scene-caption strong{color:var(--g-deep)}
+
+/* chrome + nav */
+.gift-page .gift-chrome,.gift-page .gift-chrome a,.gift-page #gift-progress,.gift-page .gift-footer,.gift-page .gift-footer *{color:var(--g-muted)}
+.gift-page .gift-share{background:#fff;color:var(--g-deep);border-color:color-mix(in srgb,var(--g-accent) 30%,transparent)}
+.gift-page .nav-btn{background:#fff;color:var(--g-deep);border:2px solid color-mix(in srgb,var(--g-accent) 30%,transparent)}
+.gift-page .nav-next{background:linear-gradient(135deg,var(--g-accent),var(--g-deep));color:#fff}
+.gift-page .nav-dots .dot{background:color-mix(in srgb,var(--g-accent) 28%,#fff)}
+.gift-page .nav-dots .dot.active{background:var(--g-accent)}
+.gift-page .primary-action,.gift-page #intro-continue,.gift-page #gate-unlock,.gift-page .yes-btn{background:linear-gradient(135deg,var(--g-accent),var(--g-deep));color:#fff;box-shadow:0 10px 24px color-mix(in srgb,var(--g-accent) 40%,transparent)}
+.gift-page .v14-no{border:2px solid var(--g-accent);background:#fff;color:var(--g-deep);font-weight:800;font-size:15px;padding:12px 26px;border-radius:999px;cursor:pointer}
+
+/* playful intro */
+.v14-ask{font-family:Fraunces,Georgia,serif;font-size:clamp(18px,2.4vw,24px);color:var(--g-deep);margin:4px 0 0;font-weight:600}
+.v14-msg{min-height:22px;font-size:14px;color:var(--g-muted);margin:0;transition:opacity .2s}
+.v14-shake{animation:v14shake .4s}
+@keyframes v14shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+
+/* tap-to-open envelope */
+.v14-envelope{border:0;background:none;cursor:pointer;display:grid;gap:8px;justify-items:center;font:inherit;color:var(--g-deep);font-weight:800}
+.v14-envelope .v14-env-art{font-size:92px;line-height:1;filter:drop-shadow(0 12px 14px rgba(0,0,0,.18));animation:v14bounce 2.2s ease-in-out infinite}
+.v14-envelope small{color:var(--g-muted);font-weight:600}
+.v14-sealed{display:none!important}
+.v14-open{animation:v14pop .6s cubic-bezier(.2,1.2,.3,1) both}
+@keyframes v14pop{from{opacity:0;transform:translateY(30px) scale(.9) rotate(-2deg)}to{opacity:1;transform:none}}
+.gift-page .letter-paper{background:#fffdf6;color:#4a3340;border:1px solid #f0e2c8;box-shadow:0 14px 30px rgba(120,80,40,.18);transform:rotate(-.6deg)}
+
+/* particles + confetti */
+.v14-float{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.v14-float span{position:absolute;bottom:-40px;animation:v14rise linear infinite;opacity:.8}
+@keyframes v14rise{to{transform:translateY(-115vh) rotate(40deg)}}
+.v14-conf{position:fixed;z-index:99;pointer-events:none;font-size:18px;line-height:1}
+@media(max-width:600px){.v14-envelope .v14-env-art{font-size:72px}}
+@media(prefers-reduced-motion:reduce){.v14-float,.v14-conf{display:none}.gift-page .template-art-frame{animation:none}}
+
+/* compact intro so the question + Yes/No always fit */
+.gift-page .scene-intro{gap:8px;padding:clamp(16px,2.6vw,30px)}
+.gift-page .scene-intro .template-intro-art{height:min(190px,24vh)!important;width:min(190px,24vh)!important}
+.gift-page .scene-intro .template-intro-title{font-size:clamp(26px,3.6vw,40px);max-width:20ch;line-height:1.08}
+.gift-page .scene-intro .template-intro-copy{font-size:14px;padding-top:8px;max-width:52ch}
+.gift-page .scene-intro .scene-caption{font-size:13px}
+.gift-page .scene-intro .v14-ask{font-size:clamp(18px,2.2vw,22px);margin-top:2px}
+@media(max-height:760px){.gift-page .scene-intro .template-intro-copy{display:none}}
+@media(max-width:600px){.gift-page .scene-intro .template-intro-art{height:min(150px,20vh)!important;width:min(150px,20vh)!important}.gift-page .scene-intro .template-intro-title{font-size:26px}}
+
+/* consistent card width + light dedication card */
+.gift-page .scene{width:min(680px,calc(100% - 24px))!important;max-width:680px!important;box-sizing:border-box}
+.gift-page .dedication-card{background:linear-gradient(160deg,#fff,color-mix(in srgb,var(--g-accent) 12%,#fff));border:2px solid color-mix(in srgb,var(--g-accent) 22%,#fff);color:var(--g-text);box-shadow:0 14px 34px color-mix(in srgb,var(--g-accent) 20%,transparent)}
+.gift-page .dedication-card h2{color:var(--g-deep)}
+.gift-page .dedication-card p,.gift-page .dedication-card .dedication-sign{color:var(--g-muted)}
+.gift-page .dedication-mark{background:#fff;border:2px solid color-mix(in srgb,var(--g-accent) 25%,#fff)}
