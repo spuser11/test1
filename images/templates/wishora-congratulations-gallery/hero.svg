@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-hidden="true">
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f1ccc4"/><stop offset="100%" stop-color="#b46c5f"/></linearGradient>
+<radialGradient id="gl"><stop offset="0%" stop-color="#f1ccc4" stop-opacity="0.65"/><stop offset="100%" stop-color="#b46c5f" stop-opacity="0"/></radialGradient>
+<filter id="sh"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/></filter></defs>
+<rect x="96" y="146" width="148" height="148" rx="14" fill="#f7ece8" filter="url(#sh)"/><circle cx="170" cy="220" r="31.1" fill="#b46c5f" opacity="0.9"/><rect x="260" y="90" width="180" height="180" rx="14" fill="#f7ece8" filter="url(#sh)"/><circle cx="350" cy="180" r="37.8" fill="#b46c5f" opacity="0.7"/><rect x="467" y="177" width="136" height="136" rx="14" fill="#f7ece8" filter="url(#sh)"/><circle cx="535" cy="245" r="28.6" fill="#b46c5f" opacity="0.8"/><path d="M180 490 Q350 355 520 490" fill="none" stroke="#edc9c0" stroke-width="28" stroke-linecap="round"/><path d="M 350 483.5 C 324.5 462.5 318.5 495.5 350 524.0 C 381.5 495.5 375.5 462.5 350 483.5 Z" fill="#b46c5f"/>
+</svg>

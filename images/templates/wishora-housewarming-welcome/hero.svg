@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-hidden="true">
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7d2a9"/><stop offset="100%" stop-color="#d98c4e"/></linearGradient>
+<radialGradient id="gl"><stop offset="0%" stop-color="#f7d2a9" stop-opacity="0.65"/><stop offset="100%" stop-color="#d98c4e" stop-opacity="0"/></radialGradient>
+<filter id="sh"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/></filter></defs>
+<rect x="135" y="300" width="430" height="270" rx="12" fill="#efd6bf" filter="url(#sh)"/><path d="M105 320 L350 130 L595 320 Z" fill="#c68453"/><rect x="320" y="415" width="80" height="155" rx="10" fill="#9d6b4e"/><rect x="185" y="395" width="90" height="75" rx="8" fill="#ffe8b7"/><rect x="425" y="395" width="90" height="75" rx="8" fill="#ffe8b7"/><circle cx="350" cy="250" r="25" fill="#f5cc63"/><path d="M350 225 C330 210 340 195 350 184 C360 195 370 210 350 225Z" fill="#ffb74d"/><path d="M110 560 Q132 470 150 560" fill="none" stroke="#6ba06f" stroke-width="18"/><path d="M590 560 Q612 470 630 560" fill="none" stroke="#6ba06f" stroke-width="18"/>
+</svg>
